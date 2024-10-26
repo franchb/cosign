@@ -27,9 +27,9 @@ import (
 	"path/filepath"
 	"syscall"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
+	"github.com/franchb/cosign/v2/pkg/cosign/pkcs11key"
 	"github.com/miekg/pkcs11"
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
-	"github.com/sigstore/cosign/v2/pkg/cosign/pkcs11key"
 	"golang.org/x/term"
 )
 

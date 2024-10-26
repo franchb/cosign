@@ -18,9 +18,9 @@ package cosign
 import (
 	"context"
 
+	"github.com/franchb/cosign/v2/internal/ui"
+	"github.com/franchb/sigstore/pkg/signature/payload"
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/sigstore/cosign/v2/internal/ui"
-	"github.com/sigstore/sigstore/pkg/signature/payload"
 )
 
 // ObsoletePayload returns the implied payload that some commands expect to match

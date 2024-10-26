@@ -16,10 +16,10 @@
 package cli
 
 import (
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/initialize"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/initialize"
 	"github.com/spf13/cobra"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
 )
 
 func Initialize() *cobra.Command {

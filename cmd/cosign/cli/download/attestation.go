@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/oci/platform"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/oci/platform"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
 )
 
 func AttestationCmd(ctx context.Context, regOpts options.RegistryOptions, attOptions options.AttestationDownloadOptions, imageRef string) error {

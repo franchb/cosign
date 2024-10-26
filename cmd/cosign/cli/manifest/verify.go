@@ -27,7 +27,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/yaml"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/verify"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/verify"
 )
 
 // VerifyManifestCommand verifies all image signatures on a supplied k8s resource

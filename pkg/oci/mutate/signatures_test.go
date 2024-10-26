@@ -19,10 +19,10 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/empty"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/empty"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
 )
 
 func TestAppendSignatures(t *testing.T) {

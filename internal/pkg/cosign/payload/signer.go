@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
-	"github.com/sigstore/sigstore/pkg/signature"
-	signatureoptions "github.com/sigstore/sigstore/pkg/signature/options"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
+	"github.com/franchb/sigstore/pkg/signature"
+	signatureoptions "github.com/franchb/sigstore/pkg/signature/options"
 )
 
 type payloadSigner struct {

@@ -37,7 +37,7 @@ func GenerateExitCodeDocs(dir string) error {
 	files := []*ast.File{
 		mustParse(fset, "./cmd/cosign/errors/exit_codes.go"),
 	}
-	p, err := godoc.NewFromFiles(fset, files, "github.com/sigstore/cosign")
+	p, err := godoc.NewFromFiles(fset, files, "github.com/franchb/cosign")
 	if err != nil {
 		panic(err)
 	}

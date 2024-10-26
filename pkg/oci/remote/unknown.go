@@ -16,9 +16,9 @@
 package remote
 
 import (
+	"github.com/franchb/cosign/v2/pkg/oci"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 // SignedUnknown provides access to signed metadata without directly accessing

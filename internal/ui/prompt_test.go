@@ -19,7 +19,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/sigstore/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/internal/ui"
 	"github.com/stretchr/testify/assert"
 )
 

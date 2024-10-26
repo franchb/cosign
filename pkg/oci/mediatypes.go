@@ -18,7 +18,7 @@ package oci
 import (
 	"strconv"
 
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
 )
 
 const (

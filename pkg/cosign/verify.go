@@ -40,36 +40,36 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/nozzle/throttler"
 
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/blob"
-	cbundle "github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
-	"github.com/sigstore/cosign/v2/pkg/types"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/blob"
+	cbundle "github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
+	"github.com/franchb/cosign/v2/pkg/types"
 
 	"github.com/cyberphone/json-canonicalization/go/src/webpki.org/jsoncanonicalizer"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/remote/transport"
 
+	ociexperimental "github.com/franchb/cosign/v2/internal/pkg/oci/remote"
+	"github.com/franchb/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/layout"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
+	"github.com/franchb/rekor/pkg/generated/client"
+	"github.com/franchb/rekor/pkg/generated/models"
+	rekor_types "github.com/franchb/rekor/pkg/types"
+	dsse_v001 "github.com/franchb/rekor/pkg/types/dsse/v0.0.1"
+	hashedrekord_v001 "github.com/franchb/rekor/pkg/types/hashedrekord/v0.0.1"
+	intoto_v001 "github.com/franchb/rekor/pkg/types/intoto/v0.0.1"
+	intoto_v002 "github.com/franchb/rekor/pkg/types/intoto/v0.0.2"
+	rekord_v001 "github.com/franchb/rekor/pkg/types/rekord/v0.0.1"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/signature"
+	"github.com/franchb/sigstore/pkg/signature/dsse"
+	"github.com/franchb/sigstore/pkg/signature/options"
+	"github.com/franchb/sigstore/pkg/tuf"
 	ssldsse "github.com/secure-systems-lab/go-securesystemslib/dsse"
-	ociexperimental "github.com/sigstore/cosign/v2/internal/pkg/oci/remote"
-	"github.com/sigstore/cosign/v2/internal/ui"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/layout"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
-	"github.com/sigstore/rekor/pkg/generated/client"
-	"github.com/sigstore/rekor/pkg/generated/models"
-	rekor_types "github.com/sigstore/rekor/pkg/types"
-	dsse_v001 "github.com/sigstore/rekor/pkg/types/dsse/v0.0.1"
-	hashedrekord_v001 "github.com/sigstore/rekor/pkg/types/hashedrekord/v0.0.1"
-	intoto_v001 "github.com/sigstore/rekor/pkg/types/intoto/v0.0.1"
-	intoto_v002 "github.com/sigstore/rekor/pkg/types/intoto/v0.0.2"
-	rekord_v001 "github.com/sigstore/rekor/pkg/types/rekord/v0.0.1"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/signature"
-	"github.com/sigstore/sigstore/pkg/signature/dsse"
-	"github.com/sigstore/sigstore/pkg/signature/options"
-	"github.com/sigstore/sigstore/pkg/tuf"
 	tsaverification "github.com/sigstore/timestamp-authority/pkg/verification"
 )
 
@@ -100,7 +100,7 @@ type CheckOpts struct {
 	// Rekor. It is a map from LogID to crypto.PublicKey. LogID is
 	// derived from the PublicKey (see RFC 6962 S3.2).
 	// Note that even though the type is of crypto.PublicKey, Rekor only allows
-	// for ecdsa.PublicKey: https://github.com/sigstore/cosign/issues/2540
+	// for ecdsa.PublicKey: https://github.com/franchb/cosign/issues/2540
 	RekorPubKeys *TrustedTransparencyLogPubKeys
 
 	// SigVerifier is used to verify signatures.

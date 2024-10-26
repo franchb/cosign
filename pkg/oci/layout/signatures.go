@@ -16,9 +16,9 @@
 package layout
 
 import (
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/internal/signature"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/internal/signature"
 )
 
 const maxLayers = 1000

@@ -23,11 +23,11 @@ import (
 	"io"
 	"strings"
 
+	payloadsize "github.com/franchb/cosign/v2/internal/pkg/cosign/payload/size"
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	payloadsize "github.com/sigstore/cosign/v2/internal/pkg/cosign/payload/size"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
 )
 
 const (

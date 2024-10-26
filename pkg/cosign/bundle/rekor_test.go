@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/franchb/rekor/pkg/generated/models"
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
-	"github.com/sigstore/rekor/pkg/generated/models"
 )
 
 func TestRekorBundle(t *testing.T) {

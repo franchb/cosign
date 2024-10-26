@@ -16,9 +16,9 @@
 package mutate
 
 import (
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	"github.com/franchb/cosign/v2/pkg/oci"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 // DupeDetector scans a list of signatures looking for a duplicate.

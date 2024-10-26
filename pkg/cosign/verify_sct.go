@@ -23,13 +23,13 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/fulcioverifier/ctutil"
 	ct "github.com/google/certificate-transparency-go"
 	ctx509 "github.com/google/certificate-transparency-go/x509"
 	"github.com/google/certificate-transparency-go/x509util"
-	"github.com/sigstore/cosign/v2/pkg/cosign/fulcioverifier/ctutil"
 
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/tuf"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/tuf"
 )
 
 // ContainsSCT checks if the certificate contains embedded SCTs. cert can either be

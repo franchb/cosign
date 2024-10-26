@@ -21,16 +21,16 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sigstore/cosign/v2/pkg/blob"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/cosign/git"
-	"github.com/sigstore/cosign/v2/pkg/cosign/git/gitlab"
-	"github.com/sigstore/cosign/v2/pkg/cosign/kubernetes"
-	"github.com/sigstore/cosign/v2/pkg/cosign/pkcs11key"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/signature"
+	"github.com/franchb/cosign/v2/pkg/blob"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/cosign/git"
+	"github.com/franchb/cosign/v2/pkg/cosign/git/gitlab"
+	"github.com/franchb/cosign/v2/pkg/cosign/kubernetes"
+	"github.com/franchb/cosign/v2/pkg/cosign/pkcs11key"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/signature"
 
-	"github.com/sigstore/sigstore/pkg/signature/kms"
+	"github.com/franchb/sigstore/pkg/signature/kms"
 )
 
 // LoadPublicKey is a wrapper for VerifierForKeyRef, hardcoding SHA256 as the hash algorithm

@@ -19,10 +19,10 @@ import (
 	"reflect"
 	"testing"
 
+	cbundle "github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	ctypes "github.com/franchb/cosign/v2/pkg/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	cbundle "github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	ctypes "github.com/sigstore/cosign/v2/pkg/types"
 )
 
 func TestOptions(t *testing.T) {

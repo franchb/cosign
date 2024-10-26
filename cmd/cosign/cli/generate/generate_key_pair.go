@@ -24,17 +24,17 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
-	"github.com/sigstore/cosign/v2/pkg/cosign/git"
-	"github.com/sigstore/cosign/v2/pkg/cosign/git/github"
-	"github.com/sigstore/cosign/v2/pkg/cosign/git/gitlab"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
+	"github.com/franchb/cosign/v2/pkg/cosign/git"
+	"github.com/franchb/cosign/v2/pkg/cosign/git/github"
+	"github.com/franchb/cosign/v2/pkg/cosign/git/gitlab"
 
-	icos "github.com/sigstore/cosign/v2/internal/pkg/cosign"
-	"github.com/sigstore/cosign/v2/internal/ui"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/cosign/kubernetes"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/signature/kms"
+	icos "github.com/franchb/cosign/v2/internal/pkg/cosign"
+	"github.com/franchb/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/cosign/kubernetes"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/signature/kms"
 )
 
 var (

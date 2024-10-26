@@ -19,11 +19,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/empty"
+	"github.com/franchb/cosign/v2/pkg/oci/signed"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/empty"
-	"github.com/sigstore/cosign/v2/pkg/oci/signed"
 )
 
 // Appendable is our signed version of mutate.Appendable

@@ -21,10 +21,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
 	"github.com/google/go-cmp/cmp"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
 )
 
 func TestNewSignatureBasic(t *testing.T) {

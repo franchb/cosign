@@ -34,15 +34,15 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/fulcio/fulcioroots"
+	"github.com/franchb/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
+	"github.com/franchb/cosign/v2/test"
+	"github.com/franchb/sigstore/pkg/signature/payload"
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/fulcio/fulcioroots"
-	"github.com/sigstore/cosign/v2/internal/ui"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
-	"github.com/sigstore/cosign/v2/test"
-	"github.com/sigstore/sigstore/pkg/signature/payload"
 	"github.com/stretchr/testify/assert"
 )
 

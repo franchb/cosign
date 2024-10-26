@@ -19,8 +19,8 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/sigstore/rekor/pkg/generated/client/entries"
-	"github.com/sigstore/rekor/pkg/generated/models"
+	"github.com/franchb/rekor/pkg/generated/client/entries"
+	"github.com/franchb/rekor/pkg/generated/models"
 )
 
 // EntriesClient is a client that implements entries.ClientService for Rekor

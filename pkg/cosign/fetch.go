@@ -26,11 +26,11 @@ import (
 	"runtime"
 	"sync"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/in-toto/in-toto-golang/in_toto"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
 	"golang.org/x/sync/errgroup"
 )
 

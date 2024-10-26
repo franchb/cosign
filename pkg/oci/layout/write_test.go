@@ -20,18 +20,18 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/mutate"
+	"github.com/franchb/cosign/v2/pkg/oci/signed"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
 	"github.com/google/go-cmp/cmp"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/random"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/mutate"
-	"github.com/sigstore/cosign/v2/pkg/oci/signed"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
 )
 
 func TestReadWrite(t *testing.T) {
 	if runtime.GOOS == "windows" {
-		t.Skip("test is flaky on windows, see https://github.com/sigstore/cosign/v2/issues/1389")
+		t.Skip("test is flaky on windows, see https://github.com/franchb/cosign/v2/issues/1389")
 	}
 	// write random signed image to disk
 	si := randomSignedImage(t)

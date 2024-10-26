@@ -19,8 +19,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/franchb/cosign/v2/internal/ui"
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/sigstore/cosign/v2/internal/ui"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

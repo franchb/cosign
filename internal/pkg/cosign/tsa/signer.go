@@ -23,14 +23,14 @@ import (
 	"strings"
 
 	"github.com/digitorus/timestamp"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/tsa/client"
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/mutate"
 	"github.com/pkg/errors"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/tsa/client"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/mutate"
 
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
 )
 
 // GetTimestampedSignature queries a timestamp authority to fetch an RFC3161 timestamp. sigBytes is an

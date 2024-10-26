@@ -16,11 +16,11 @@
 package mutate
 
 import (
+	"github.com/franchb/cosign/v2/internal/pkg/now"
+	"github.com/franchb/cosign/v2/pkg/oci"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/empty"
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
-	"github.com/sigstore/cosign/v2/internal/pkg/now"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 const maxLayers = 1000

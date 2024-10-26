@@ -24,14 +24,14 @@ import (
 	"path"
 	"testing"
 
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/sign"
+	cliverify "github.com/franchb/cosign/v2/cmd/cosign/cli/verify"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/v1/random"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/sign"
-	cliverify "github.com/sigstore/cosign/v2/cmd/cosign/cli/verify"
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
 )
 
 const (

@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/verify"
-	"github.com/sigstore/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/verify"
+	"github.com/franchb/cosign/v2/internal/ui"
 )
 
 // VerifyCommand verifies a signature on a supplied container image

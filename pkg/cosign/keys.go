@@ -30,10 +30,10 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/franchb/cosign/v2/pkg/oci/static"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/signature"
 	"github.com/secure-systems-lab/go-securesystemslib/encrypted"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/signature"
 )
 
 const (

@@ -22,15 +22,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli"
-	cosignError "github.com/sigstore/cosign/v2/cmd/cosign/errors"
-	"github.com/sigstore/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli"
+	cosignError "github.com/franchb/cosign/v2/cmd/cosign/errors"
+	"github.com/franchb/cosign/v2/internal/ui"
 
 	// Register the provider-specific plugins
-	_ "github.com/sigstore/sigstore/pkg/signature/kms/aws"
-	_ "github.com/sigstore/sigstore/pkg/signature/kms/azure"
-	_ "github.com/sigstore/sigstore/pkg/signature/kms/gcp"
-	_ "github.com/sigstore/sigstore/pkg/signature/kms/hashivault"
+	_ "github.com/franchb/sigstore/pkg/signature/kms/hashivault"
+	_ "github.com/franchb/sigstore/pkg/signature/kms/yckms"
 )
 
 func main() {

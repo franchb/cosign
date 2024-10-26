@@ -19,8 +19,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/pkg/cosign"
 )
 
 func TestSignBlobCmd(t *testing.T) {

@@ -28,13 +28,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/test"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/test"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/oauthflow"
+	"github.com/franchb/sigstore/pkg/signature"
 	"github.com/sigstore/fulcio/pkg/api"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/oauthflow"
-	"github.com/sigstore/sigstore/pkg/signature"
 )
 
 type testFlow struct {

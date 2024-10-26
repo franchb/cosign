@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/tuf"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/tuf"
 )
 
 const (

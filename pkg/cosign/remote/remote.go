@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/mutate"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
-	"github.com/sigstore/sigstore/pkg/signature"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/mutate"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
+	"github.com/franchb/sigstore/pkg/signature"
 )
 
 // NewDupeDetector creates a new DupeDetector that looks for matching signatures that

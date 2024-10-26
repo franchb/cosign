@@ -18,8 +18,8 @@ package oci
 import (
 	"crypto/x509"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
 )
 
 // Signatures represents a set of signatures that are associated with a particular

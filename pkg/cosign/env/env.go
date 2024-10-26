@@ -61,19 +61,15 @@ const (
 	VariableSigstoreTSACertificateFile Variable = "SIGSTORE_TSA_CERTIFICATE_FILE"
 
 	// Other external environment variables
-	VariableGitHubHost                Variable = "GITHUB_HOST"
-	VariableGitHubToken               Variable = "GITHUB_TOKEN" //nolint:gosec
-	VariableGitHubRequestToken        Variable = "ACTIONS_ID_TOKEN_REQUEST_TOKEN"
-	VariableGitHubRequestURL          Variable = "ACTIONS_ID_TOKEN_REQUEST_URL"
-	VariableSPIFFEEndpointSocket      Variable = "SPIFFE_ENDPOINT_SOCKET"
-	VariableGoogleServiceAccountName  Variable = "GOOGLE_SERVICE_ACCOUNT_NAME"
-	VariableGitLabHost                Variable = "GITLAB_HOST"
-	VariableGitLabToken               Variable = "GITLAB_TOKEN"
-	VariableBuildkiteAgentAccessToken Variable = "BUILDKITE_AGENT_ACCESS_TOKEN"
-	VariableBuildkiteAgentEndpoint    Variable = "BUILDKITE_AGENT_ENDPOINT"
-	VariableBuildkiteJobID            Variable = "BUILDKITE_JOB_ID"
-	VariableBuildkiteAgentLogLevel    Variable = "BUILDKITE_AGENT_LOG_LEVEL"
-	VariableSourceDateEpoch           Variable = "SOURCE_DATE_EPOCH"
+	VariableGitHubHost               Variable = "GITHUB_HOST"
+	VariableGitHubToken              Variable = "GITHUB_TOKEN" //nolint:gosec
+	VariableGitHubRequestToken       Variable = "ACTIONS_ID_TOKEN_REQUEST_TOKEN"
+	VariableGitHubRequestURL         Variable = "ACTIONS_ID_TOKEN_REQUEST_URL"
+	VariableSPIFFEEndpointSocket     Variable = "SPIFFE_ENDPOINT_SOCKET"
+	VariableGoogleServiceAccountName Variable = "GOOGLE_SERVICE_ACCOUNT_NAME"
+	VariableGitLabHost               Variable = "GITLAB_HOST"
+	VariableGitLabToken              Variable = "GITLAB_TOKEN"
+	VariableSourceDateEpoch          Variable = "SOURCE_DATE_EPOCH"
 )
 
 var (
@@ -191,30 +187,6 @@ var (
 			Description: "is a token used to authenticate with GitLab",
 			Expects:     "string with a token",
 			Sensitive:   true,
-			External:    true,
-		},
-		VariableBuildkiteAgentAccessToken: {
-			Description: "is an access token used to identify the Buildkite agent",
-			Expects:     "string with an access token",
-			Sensitive:   true,
-			External:    true,
-		},
-		VariableBuildkiteAgentEndpoint: {
-			Description: "the Buildkite agent endpoint",
-			Expects:     "string with an endpoint",
-			Sensitive:   false,
-			External:    true,
-		},
-		VariableBuildkiteJobID: {
-			Description: "the Buildkite job ID to claim in the OIDC token",
-			Expects:     "string with a job ID",
-			Sensitive:   false,
-			External:    true,
-		},
-		VariableBuildkiteAgentLogLevel: {
-			Description: "the log level for the Buildkite agent",
-			Expects:     "string with log level, either debug, notice, info, error, warn, fatal (default: notice)",
-			Sensitive:   false,
 			External:    true,
 		},
 		VariableSigstoreIDToken: {
