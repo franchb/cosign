@@ -18,11 +18,11 @@ package cli
 import (
 	"fmt"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/dockerfile"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/verify"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/dockerfile"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/verify"
 	"github.com/spf13/cobra"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
 )
 
 func Dockerfile() *cobra.Command {

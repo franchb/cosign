@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 type List []struct {

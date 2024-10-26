@@ -27,9 +27,9 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/remote/transport"
 	"github.com/spf13/cobra"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/internal/ui"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/internal/ui"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
 )
 
 func Clean() *cobra.Command {

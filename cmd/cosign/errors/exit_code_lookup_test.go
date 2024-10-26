@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"testing"
 
-	pkgError "github.com/sigstore/cosign/v2/pkg/cosign"
+	pkgError "github.com/franchb/cosign/v2/pkg/cosign"
 )
 
 func TestDefaultExitCodeReturnIfErrorTypeToExitCodeMappingDoesNotExist(t *testing.T) {

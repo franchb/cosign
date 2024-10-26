@@ -18,7 +18,7 @@ package cosign
 import (
 	"context"
 
-	"github.com/sigstore/rekor/pkg/generated/client"
+	"github.com/franchb/rekor/pkg/generated/client"
 )
 
 // key is used for associating the Rekor client client inside the

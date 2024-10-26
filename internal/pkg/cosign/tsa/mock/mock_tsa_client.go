@@ -25,9 +25,9 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/digitorus/timestamp"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/tsa/client"
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
-	"github.com/sigstore/sigstore/pkg/signature"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/tsa/client"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/signature"
 	"github.com/sigstore/timestamp-authority/pkg/signer"
 )
 

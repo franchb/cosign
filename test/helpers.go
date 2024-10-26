@@ -52,12 +52,12 @@ import (
 	// Initialize all known client auth plugins
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	cliverify "github.com/sigstore/cosign/v2/cmd/cosign/cli/verify"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
-	sigs "github.com/sigstore/cosign/v2/pkg/signature"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	cliverify "github.com/franchb/cosign/v2/cmd/cosign/cli/verify"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
+	sigs "github.com/franchb/cosign/v2/pkg/signature"
 )
 
 const (

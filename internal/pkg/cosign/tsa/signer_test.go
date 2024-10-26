@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/payload"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/tsa/mock"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/sigstore/pkg/signature"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/payload"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/tsa/mock"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/sigstore/pkg/signature"
 )
 
 func mustGetNewSigner(t *testing.T) signature.Signer {

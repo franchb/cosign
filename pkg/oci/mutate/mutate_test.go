@@ -22,12 +22,12 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
+	"github.com/franchb/cosign/v2/pkg/oci/signed"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
 	"github.com/google/go-containerregistry/pkg/v1/random"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	"github.com/sigstore/cosign/v2/pkg/oci/signed"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
 )
 
 func TestAppendManifests(t *testing.T) {

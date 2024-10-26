@@ -19,10 +19,10 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/empty"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 type signedImage struct {

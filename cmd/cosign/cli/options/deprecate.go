@@ -17,5 +17,5 @@ package options
 
 const SBOMAttachmentDeprecation = "WARNING: SBOM attachments are deprecated " +
 	"and support will be removed in a Cosign release soon after 2024-02-22 " +
-	"(see https://github.com/sigstore/cosign/issues/2755). " +
+	"(see https://github.com/franchb/cosign/issues/2755). " +
 	"Instead, please use SBOM attestations."

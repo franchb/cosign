@@ -15,9 +15,9 @@
 package cli
 
 import (
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/attest"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/generate"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/attest"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/generate"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
 	"github.com/spf13/cobra"
 )
 

@@ -18,10 +18,10 @@ package remote
 import (
 	"fmt"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
 	"github.com/google/go-containerregistry/pkg/authn"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
 )
 
 const (

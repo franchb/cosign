@@ -25,9 +25,9 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/franchb/sigstore-go/pkg/bundle"
 	protobundle "github.com/sigstore/protobuf-specs/gen/pb-go/bundle/v1"
 	protocommon "github.com/sigstore/protobuf-specs/gen/pb-go/common/v1"
-	"github.com/sigstore/sigstore-go/pkg/bundle"
 	"google.golang.org/protobuf/encoding/protojson"
 )
 
@@ -50,7 +50,7 @@ func usage() {
 func parseArgs() {
 	for i := 2; i < len(os.Args); {
 		switch os.Args[i] {
-		// TODO: support staging (see https://github.com/sigstore/cosign/issues/2434)
+		// TODO: support staging (see https://github.com/franchb/cosign/issues/2434)
 		//
 		// Today cosign signing does not yet use sigstore-go, and so we would
 		// need to make some clever invocation of `cosign initialize` to
@@ -112,7 +112,7 @@ func main() {
 		args = append(args, "verify-blob")
 
 		// TODO: for now, we handle `verify` by constructing a bundle
-		// (see https://github.com/sigstore/cosign/issues/3700)
+		// (see https://github.com/franchb/cosign/issues/3700)
 		//
 		// Today cosign only supports `--trusted-root` with the new bundle
 		// format. When cosign supports `--trusted-root` with detached signed

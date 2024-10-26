@@ -21,9 +21,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/sigstore/cosign/v2/internal/ui"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
+	"github.com/franchb/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
 	"github.com/xanzy/go-gitlab"
 )
 

@@ -23,8 +23,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/pkg/cosign/env"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/pkg/cosign/env"
 )
 
 func Env() *cobra.Command {
@@ -97,7 +97,7 @@ func printEnv(envVars map[env.Variable]env.VariableOpts,
 		for _, prefix := range []string{
 			// We want to print eventually non-registered cosign variables (even if this shouldn't happen)
 			"COSIGN_",
-			// Can modify Sigstore/TUF client behavior - https://github.com/sigstore/sigstore/blob/35d6a82c15183f7fe7a07eca45e17e378aa32126/pkg/tuf/client.go#L52
+			// Can modify Sigstore/TUF client behavior - https://github.com/franchb/sigstore/blob/35d6a82c15183f7fe7a07eca45e17e378aa32126/pkg/tuf/client.go#L52
 			"SIGSTORE_",
 			"TUF_",
 		} {

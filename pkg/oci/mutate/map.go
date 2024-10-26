@@ -20,11 +20,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/empty"
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 // Fn is the signature of the callback supplied to Map.

@@ -21,14 +21,14 @@ import (
 	"fmt"
 	"os"
 
+	ociexperimental "github.com/franchb/cosign/v2/internal/pkg/oci/remote"
+	"github.com/franchb/cosign/v2/pkg/oci"
+	ctypes "github.com/franchb/cosign/v2/pkg/types"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
 	"github.com/google/go-containerregistry/pkg/v1/static"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	ociexperimental "github.com/sigstore/cosign/v2/internal/pkg/oci/remote"
-	"github.com/sigstore/cosign/v2/pkg/oci"
-	ctypes "github.com/sigstore/cosign/v2/pkg/types"
 )
 
 // WriteSignedImageIndexImages writes the images within the image index

@@ -21,13 +21,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/payload"
+	"github.com/franchb/cosign/v2/internal/pkg/cosign/rekor/mock"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/rekor/pkg/generated/client"
+	"github.com/franchb/rekor/pkg/generated/models"
+	"github.com/franchb/sigstore/pkg/signature"
 	"github.com/go-openapi/swag"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/payload"
-	"github.com/sigstore/cosign/v2/internal/pkg/cosign/rekor/mock"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/rekor/pkg/generated/client"
-	"github.com/sigstore/rekor/pkg/generated/models"
-	"github.com/sigstore/sigstore/pkg/signature"
 )
 
 func mustGetNewSigner(t *testing.T) signature.Signer {

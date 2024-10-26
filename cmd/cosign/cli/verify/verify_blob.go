@@ -28,18 +28,18 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/rekor"
-	"github.com/sigstore/cosign/v2/internal/ui"
-	"github.com/sigstore/cosign/v2/pkg/blob"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	"github.com/sigstore/cosign/v2/pkg/cosign/pivkey"
-	"github.com/sigstore/cosign/v2/pkg/cosign/pkcs11key"
-	"github.com/sigstore/cosign/v2/pkg/oci/static"
-	sigs "github.com/sigstore/cosign/v2/pkg/signature"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/rekor"
+	"github.com/franchb/cosign/v2/internal/ui"
+	"github.com/franchb/cosign/v2/pkg/blob"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	"github.com/franchb/cosign/v2/pkg/cosign/pivkey"
+	"github.com/franchb/cosign/v2/pkg/cosign/pkcs11key"
+	"github.com/franchb/cosign/v2/pkg/oci/static"
+	sigs "github.com/franchb/cosign/v2/pkg/signature"
 
-	"github.com/sigstore/sigstore/pkg/cryptoutils"
+	"github.com/franchb/sigstore/pkg/cryptoutils"
 )
 
 func isb64(data []byte) bool {

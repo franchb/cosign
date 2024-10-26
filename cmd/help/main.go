@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/templates"
-	errors "github.com/sigstore/cosign/v2/cmd/cosign/errors"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/templates"
+	errors "github.com/franchb/cosign/v2/cmd/cosign/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
 )

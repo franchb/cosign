@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sigstore/sigstore/pkg/signature"
+	"github.com/franchb/sigstore/pkg/signature"
 )
 
 func TestEphemeralSigner(t *testing.T) {

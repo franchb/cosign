@@ -22,11 +22,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
 	"github.com/in-toto/in-toto-golang/in_toto"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/pkg/cosign/attestation"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/pkg/cosign/attestation"
 )
 
 // PayloadProvider is a subset of oci.Signature that only provides the

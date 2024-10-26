@@ -21,10 +21,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/sigstore/cosign/v2/pkg/blob"
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	sigsignature "github.com/sigstore/sigstore/pkg/signature"
-	"github.com/sigstore/sigstore/pkg/signature/kms"
+	"github.com/franchb/cosign/v2/pkg/blob"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	sigsignature "github.com/franchb/sigstore/pkg/signature"
+	"github.com/franchb/sigstore/pkg/signature/kms"
 )
 
 func generateKeyFile(t *testing.T, tmpDir string, pf cosign.PassFunc) (privFile, pubFile string) {

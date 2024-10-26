@@ -23,9 +23,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/franchb/cosign/v2/pkg/types"
+	"github.com/franchb/sigstore/pkg/signature"
 	"github.com/secure-systems-lab/go-securesystemslib/dsse"
-	"github.com/sigstore/cosign/v2/pkg/types"
-	"github.com/sigstore/sigstore/pkg/signature"
 )
 
 func TestDSSEAttestor(t *testing.T) {

@@ -18,9 +18,9 @@ package static
 import (
 	"encoding/json"
 
+	"github.com/franchb/cosign/v2/pkg/cosign/bundle"
+	ctypes "github.com/franchb/cosign/v2/pkg/types"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	"github.com/sigstore/cosign/v2/pkg/cosign/bundle"
-	ctypes "github.com/sigstore/cosign/v2/pkg/types"
 )
 
 // Option is a functional option for customizing static signatures.

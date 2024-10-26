@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"time"
 
-	sgbundle "github.com/sigstore/sigstore-go/pkg/bundle"
-	"github.com/sigstore/sigstore-go/pkg/fulcio/certificate"
-	"github.com/sigstore/sigstore-go/pkg/root"
-	"github.com/sigstore/sigstore-go/pkg/verify"
+	sgbundle "github.com/franchb/sigstore-go/pkg/bundle"
+	"github.com/franchb/sigstore-go/pkg/fulcio/certificate"
+	"github.com/franchb/sigstore-go/pkg/root"
+	"github.com/franchb/sigstore-go/pkg/verify"
 
-	"github.com/sigstore/cosign/v2/pkg/cosign/pivkey"
-	sigs "github.com/sigstore/cosign/v2/pkg/signature"
+	"github.com/franchb/cosign/v2/pkg/cosign/pivkey"
+	sigs "github.com/franchb/cosign/v2/pkg/signature"
 )
 
 type verifyTrustedMaterial struct {

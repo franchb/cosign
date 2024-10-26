@@ -15,7 +15,7 @@
 package bundle
 
 import (
-	"github.com/sigstore/rekor/pkg/generated/models"
+	"github.com/franchb/rekor/pkg/generated/models"
 )
 
 // RekorBundle holds metadata about recording a Signature's ephemeral key to

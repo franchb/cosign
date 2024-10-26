@@ -24,9 +24,9 @@ import (
 	"github.com/spf13/pflag"
 	"sigs.k8s.io/release-utils/version"
 
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/templates"
 	cranecmd "github.com/google/go-containerregistry/cmd/crane/cmd"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/templates"
 	cobracompletefig "github.com/withfig/autocomplete-tools/integrations/cobra"
 )
 

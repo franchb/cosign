@@ -22,7 +22,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/ptr"
 
-	"github.com/sigstore/cosign/v2/pkg/cosign"
+	"github.com/franchb/cosign/v2/pkg/cosign"
 )
 
 func TestSecret(t *testing.T) {

@@ -19,11 +19,11 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/partial"
 	"github.com/google/go-containerregistry/pkg/v1/remote/transport"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 var ErrImageNotFound = errors.New("image not found in registry")

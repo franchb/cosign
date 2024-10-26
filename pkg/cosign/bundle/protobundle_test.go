@@ -17,11 +17,11 @@ package bundle
 import (
 	"testing"
 
+	"github.com/franchb/rekor/pkg/generated/models"
+	_ "github.com/franchb/rekor/pkg/types/hashedrekord"
+	_ "github.com/franchb/rekor/pkg/types/hashedrekord/v0.0.1"
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
-	"github.com/sigstore/rekor/pkg/generated/models"
-	_ "github.com/sigstore/rekor/pkg/types/hashedrekord"
-	_ "github.com/sigstore/rekor/pkg/types/hashedrekord/v0.0.1"
 )
 
 func TestMakeProtobufBundle(t *testing.T) {

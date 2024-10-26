@@ -19,18 +19,12 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
-	"io"
 	"net/http"
 
-	ecr "github.com/awslabs/amazon-ecr-credential-helper/ecr-login"
-	"github.com/chrismellard/docker-credential-acr-env/pkg/credhelper"
+	ociremote "github.com/franchb/cosign/v2/pkg/oci/remote"
 	"github.com/google/go-containerregistry/pkg/authn"
-	"github.com/google/go-containerregistry/pkg/authn/github"
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/google/go-containerregistry/pkg/v1/google"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
-	alibabaacr "github.com/mozillazg/docker-credential-acr-helper/pkg/credhelper"
-	ociremote "github.com/sigstore/cosign/v2/pkg/oci/remote"
 	"github.com/spf13/cobra"
 )
 
@@ -116,11 +110,6 @@ func (o *RegistryOptions) GetRegistryClientOpts(ctx context.Context) []remote.Op
 	case o.KubernetesKeychain:
 		kc := authn.NewMultiKeychain(
 			authn.DefaultKeychain,
-			google.Keychain,
-			authn.NewKeychainFromHelper(ecr.NewECRHelper(ecr.WithLogger(io.Discard))),
-			authn.NewKeychainFromHelper(credhelper.NewACRCredentialsHelper()),
-			authn.NewKeychainFromHelper(alibabaacr.NewACRHelper().WithLoggerOut(io.Discard)),
-			github.Keychain,
 		)
 		opts = append(opts, remote.WithAuthFromKeychain(kc))
 	case o.AuthConfig.Username != "" && o.AuthConfig.Password != "":

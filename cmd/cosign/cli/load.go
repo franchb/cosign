@@ -21,9 +21,9 @@ import (
 
 	"github.com/google/go-containerregistry/pkg/name"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
-	"github.com/sigstore/cosign/v2/pkg/oci/layout"
-	"github.com/sigstore/cosign/v2/pkg/oci/remote"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/pkg/oci/layout"
+	"github.com/franchb/cosign/v2/pkg/oci/remote"
 
 	"github.com/spf13/cobra"
 )

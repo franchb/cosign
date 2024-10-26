@@ -18,11 +18,11 @@ package signed
 import (
 	"testing"
 
+	"github.com/franchb/cosign/v2/pkg/oci"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
 	"github.com/google/go-containerregistry/pkg/v1/random"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	"github.com/sigstore/cosign/v2/pkg/oci"
 )
 
 func TestImageIndex(t *testing.T) {

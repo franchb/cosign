@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sigstore/cosign/v2/pkg/cosign"
-	"github.com/sigstore/sigstore/pkg/signature"
+	"github.com/franchb/cosign/v2/pkg/cosign"
+	"github.com/franchb/sigstore/pkg/signature"
 )
 
 func mustGetNewSigner(t *testing.T) signature.Signer {

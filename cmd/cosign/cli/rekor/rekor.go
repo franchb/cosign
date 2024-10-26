@@ -15,10 +15,10 @@
 package rekor
 
 import (
-	rekor "github.com/sigstore/rekor/pkg/client"
-	"github.com/sigstore/rekor/pkg/generated/client"
+	rekor "github.com/franchb/rekor/pkg/client"
+	"github.com/franchb/rekor/pkg/generated/client"
 
-	"github.com/sigstore/cosign/v2/cmd/cosign/cli/options"
+	"github.com/franchb/cosign/v2/cmd/cosign/cli/options"
 )
 
 func NewClient(rekorURL string) (*client.Rekor, error) {
